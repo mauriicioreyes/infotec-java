@@ -1,4 +1,4 @@
-public class Animal {
+public class Animal implements Habilidad2 {
     private String raza;
     private String edad;
 
@@ -16,5 +16,20 @@ public class Animal {
 
     public void setEdad(String edad) {
         this.edad = edad;
+    }
+
+    @Override
+    public void guardar() {
+
+    }
+
+    @Override
+    public void editar() {
+
+    }
+
+    @Override
+    public void eliminar() {
+        
     }
 }
