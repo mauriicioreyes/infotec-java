@@ -2,6 +2,9 @@ public class Animal implements Habilidad2 {
     private String raza;
     private String edad;
 
+    // Declara un atributo estático
+    public static String pruebaStatic;
+
     public String getRaza() {
         return raza;
     }
@@ -30,6 +33,11 @@ public class Animal implements Habilidad2 {
 
     @Override
     public void eliminar() {
-        
+
+    }
+
+    public static String convertirString(String s) {
+        // this.raza;
+        return s+s;
     }
 }

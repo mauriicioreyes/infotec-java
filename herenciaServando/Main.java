@@ -30,5 +30,19 @@ public class Main {
 
         // Implementa un método que hereda Persona de Habilidad
         objetoDoctor1.printString();
+
+        // Llama a método estático
+        // Un método estático pertenece a la clase, no al objeto.
+        // objetoAnimal1.convertirString("a");
+        Animal.convertirString("a");
+
+        // Llama el atributo Static
+        objetoAnimal1.pruebaStatic = "PRUEBA-STATIC";
+        System.out.println("objetoAnimal3: " + objetoAnimal3.pruebaStatic);
+
+        Animal.pruebaStatic = "PRUEBA-2-STATIC";
+        System.out.println("objetoAnimal2: " + objetoAnimal2.pruebaStatic);
+        System.out.println("Animal: " + Animal.pruebaStatic);
+          
     }
 }
