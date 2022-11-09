@@ -1,4 +1,4 @@
-public abstract class Persona {
+public abstract class Persona extends Habilidad{
     private String nombre;
     private String apellidos;
 

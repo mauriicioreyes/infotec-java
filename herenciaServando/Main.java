@@ -27,5 +27,8 @@ public class Main {
         for(Doctor item:DoctorsList) {
             System.out.println(item.getNombreCompleto());
         }
+
+        // Implementa un método que hereda Persona de Habilidad
+        objetoDoctor1.printString();
     }
 }
