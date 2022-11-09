@@ -1,4 +1,4 @@
-public class Persona {
+public abstract class Persona {
     private String nombre;
     private String apellidos;
 
@@ -36,4 +36,9 @@ public class Persona {
         // return nombre==null?"Sin Dato":nombre + " " + apellidos;
         return nombre==null?"Sin Dato":nombre + " " + (apellidos==null?"":apellidos);
     }
+
+    // Método de tipo abstract,
+    // Son métodos que están declarados pero su cuerpo no está construido.
+    public abstract void pruebaAbstracto();
+
 }
