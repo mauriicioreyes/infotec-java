@@ -1,4 +1,9 @@
-public class EmpleadoTipo2 {
+public class EmpleadoTipo2 extends Empleado {
+
+    public EmpleadoTipo2(String nombreCompleto, Integer edad, Integer antiguedad) {
+        super(nombreCompleto, edad, antiguedad);
+        setTipo(2);
+    }
 
     // Actividades
     // - Vender productos
