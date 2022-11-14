@@ -9,4 +9,8 @@ public class EmpleadoTipo2 extends Empleado {
     // - Vender productos
     // - Descansar
     // - Correr
+
+    public void venderProducto() {}
+    public void descansar() {}
+    public void correr() {}
 }

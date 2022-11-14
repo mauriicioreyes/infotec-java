@@ -10,4 +10,9 @@ public class EmpleadoTipo1 extends Empleado {
     // - Acomodar productos
     // - Descansar
     // - Sentarse
+
+    public void venderProducto() {}
+    public void acomodarProducto() {}
+    public void descansar() {}
+    public void sentarse() {}
 }

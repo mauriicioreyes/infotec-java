@@ -45,4 +45,8 @@ public class Empleado {
 
     // Todos los empleados comparten una actividad llamada <Recibir Pago>
     // Cuando realizan esta actividad los empleados muestran el monto que les fue pagado
+
+    public Double recibirPago(Double pago) {
+        return pago;
+    }
 }
