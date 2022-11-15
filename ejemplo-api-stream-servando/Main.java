@@ -58,5 +58,33 @@ public class Main {
         numerosFiltrados2 = numeros.stream().map((x) -> x + 5).collect(Collectors.toList());
 
         System.out.println("\nModificar Api Stream (map): " + numerosFiltrados2);
+
+
+        System.out.println("\n--------------------------------");
+
+        List<Persona> listaPersonas = new ArrayList<>();
+        listaPersonas.add(new Persona(1, "Mauricio", "Reyes"));
+        listaPersonas.add(new Persona(2, "Michel", "Reyes"));
+        listaPersonas.add(new Persona(3, "Patricia", "Moreno"));
+        listaPersonas.add(new Persona(4, "Victor", "García"));
+        listaPersonas.add(new Persona(5, "José", "Velazco"));
+
+        // Forma tradicional para enviar datos a PersonaDTO
+        System.out.println("\nForma tradicional: \n");
+        List<PersonaDTO> dataDTO = new ArrayList<>();
+        for(Persona persona:listaPersonas) {
+            dataDTO.add(new PersonaDTO(persona));
+        }
+
+        for(PersonaDTO persona:dataDTO) {
+            System.out.println(persona.nombreApellido);
+        }
+
+        // Implementa Stream para objetos
+        System.out.println("\nObjeto mediante Api Stream y Clase DTO: \n");
+
+        List<PersonaDTO> personasData = listaPersonas.stream().map(PersonaDTO::new).collect(Collectors.toList());
+
+        personasData.stream().forEach(x -> System.out.println(x.nombreApellido));
     }
 }
