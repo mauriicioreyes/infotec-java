@@ -21,7 +21,12 @@ public class Main {
 
         System.out.println(resultado2);
 
+        // Invoca función de orden superior
         concatenaSuperior(instancia);
+
+        // Invoca función de orden superior con nuestra clase anónima
+        concatenaSuperior(inter);
+
     }
 
     // Funciones de Orden Superior
