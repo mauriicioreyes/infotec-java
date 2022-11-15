@@ -41,5 +41,22 @@ public class Main {
         }).collect(Collectors.toList());
         
         System.out.println("\nFiltrar Api Stream (nueva lista): " + apiFiltro);
+
+        
+        System.out.println("\n--------------------------------");
+
+        // Modificar valores de forma tradicional
+        for(int x = 0; x < numeros.size(); x++) {
+            numeros.set(x, numeros.get(x) + 5);
+        }
+
+        System.out.println("\nModificar normal: " + numeros);
+
+        // Modificar valores mediante Api Stream
+        List<Integer> numerosFiltrados2 = new ArrayList<>();
+
+        numerosFiltrados2 = numeros.stream().map((x) -> x + 5).collect(Collectors.toList());
+
+        System.out.println("\nModificar Api Stream (map): " + numerosFiltrados2);
     }
 }
