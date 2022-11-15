@@ -32,7 +32,7 @@ public class Main {
          * Lambda en Java corresponde a funciones anónimas
          * Son funciones que no tienen algún nombre asociado
          * (parámetros) -> {cuerpo}
-         */
+        */
 
         InterfazFuncional lambda1 = (String s) -> {
             Integer suma = 4 + 4;
@@ -51,13 +51,12 @@ public class Main {
         InterfazFuncional lambda3 = s -> "\nForma Lambda 3: Retorno " + (4 + 4) + ", parametro " + s;
         concatenaSuperior(lambda3);
 
-
         /*
             Parámetros ():
             - Sin parámetros, se colocan los paréntesis: ()
             - Si sólo tiene un parámetro, puede declararse sin paréntesis: s / (s) -> {}
             - Si tiene más de un parámetro: (s, x) / (Integer s, String x)
-         */
+        */
 
         /*
             Cuerpo {}:
@@ -69,8 +68,13 @@ public class Main {
             {
                 return "cadena"
             }
-         */
-        }
+        */
+
+        
+        // Podríamos agregar parámetros compartidos para distintas funciones
+        Gato gato = new Gato();
+        concatenaSuperior(gato::miau);
+    }
 
     // Funciones de Orden Superior
         // Son funciones que deben cumplir por lo menos una caracteristica:
