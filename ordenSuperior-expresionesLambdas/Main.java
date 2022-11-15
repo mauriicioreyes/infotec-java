@@ -20,5 +20,15 @@ public class Main {
         String resultado2 = inter.concatena("5000");
 
         System.out.println(resultado2);
+
+        concatenaSuperior(instancia);
+    }
+
+    // Funciones de Orden Superior
+        // Son funciones que deben cumplir por lo menos una caracteristica:
+        // - Debe de recibir como parámetro una o más funciones
+        // - Debe de retornar como resultado de su ejecución otra función 
+    public static void concatenaSuperior(InterfazFuncional inter) {
+        System.out.println(inter.concatena("High Order (Orden Superior)"));
     }
 }
